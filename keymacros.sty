@@ -1,4 +1,6 @@
 \ProvidesPackage{keymacros}
+\RequirePackage[os=win]{menukeys}
+\RequirePackage{textcomp}
 
 %%% Keys for standard US layout %%%
 \newcommand{\keyesc}{ESC}
@@ -15,22 +17,22 @@
 \newcommand{\keyfeleven}{F11}
 \newcommand{\keyftwelve}{F12}
 
-\newcommand{\keytilde}{\huge\~{}}
-\newcommand{\keyone}{1}
-\newcommand{\keytwo}{2}
-\newcommand{\keythree}{3}
-\newcommand{\keyfour}{4}
-\newcommand{\keyfive}{5}
-\newcommand{\keysix}{6}
-\newcommand{\keyseven}{7}
-\newcommand{\keyeight}{8}
-\newcommand{\keynine}{9}
-\newcommand{\keyzero}{0}
-\newcommand{\keyminus}{-}
-\newcommand{\keyequals}{=}
-\newcommand{\keybackspace}{BACKSPACE} %TODO
+\newcommand{\keytilde}{\raisebox{-4pt}{\huge\~{}}\\\`{}}
+\newcommand{\keyone}{!\\1}
+\newcommand{\keytwo}{@\\2}
+\newcommand{\keythree}{\#\\3}
+\newcommand{\keyfour}{\$\\4}
+\newcommand{\keyfive}{\%\\5}
+\newcommand{\keysix}{\raisebox{-6pt}{\huge\textasciicircum}\\6}
+\newcommand{\keyseven}{\&\\7}
+\newcommand{\keyeight}{$\ast$\\8}
+\newcommand{\keynine}{(\\9}
+\newcommand{\keyzero}{)\\0}
+\newcommand{\keyminus}{\huge\_\\-}
+\newcommand{\keyequals}{+\\=}
+\newcommand{\keybackspace}{$\leftarrow$\begin{tabular}{c}BACK\\SPACE\end{tabular}}
 
-\newcommand{\keytab}{} %TODO
+\newcommand{\keytab}{\tab}
 \newcommand{\keyq}{Q}
 \newcommand{\keyw}{W}
 \newcommand{\keye}{E}
@@ -41,13 +43,13 @@
 \newcommand{\keyi}{I}
 \newcommand{\keyo}{O}
 \newcommand{\keyp}{P}
-\newcommand{\keylbracket}{[}
-\newcommand{\keyrbracket}{]}
-\newcommand{\keybackslash}{\textbackslash}
+\newcommand{\keylbracket}{\{\\{[}}
+\newcommand{\keyrbracket}{\}\\{]}}
+\newcommand{\keybackslash}{\textbrokenbar\\\textbackslash}
 
-\newcommand{\keycapslock}{CAPS LOCK}
+\newcommand{\keycapslock}{CAPS\\LOCK}
 \newcommand{\keya}{A}
-\newcommand{\keys}{S}
+\renewcommand{\keys}{S}
 \newcommand{\keyd}{D}
 \newcommand{\keyf}{F}
 \newcommand{\keyg}{G}
@@ -55,11 +57,11 @@
 \newcommand{\keyj}{J}
 \newcommand{\keyk}{K}
 \newcommand{\keyl}{L}
-\newcommand{\keysemicolon}{;}
-\newcommand{\keyapostrophe}{'}
-\newcommand{\keyreturn}{ENTER} %TODO
+\newcommand{\keysemicolon}{:\\;}
+\newcommand{\keyapostrophe}{''\\\textquotesingle}
+\newcommand{\keyreturn}{\return{} ENTER}
 
-\newcommand{\keylshift}{SHIFT} %TODO
+\newcommand{\keylshift}{\shift{} SHIFT}
 \newcommand{\keyz}{Z}
 \newcommand{\keyx}{X}
 \newcommand{\keyc}{C}
@@ -67,16 +69,16 @@
 \newcommand{\keyb}{B}
 \newcommand{\keyn}{N}
 \newcommand{\keym}{M}
-\newcommand{\keycomma}{,}
-\newcommand{\keyperiod}{.}
-\newcommand{\keyslash}{/}
-\newcommand{\keyrshift}{SHIFT} %TODO
+\newcommand{\keycomma}{$<$\\,}
+\newcommand{\keyperiod}{$>$\\.}
+\newcommand{\keyslash}{?\\/}
+\newcommand{\keyrshift}{\shift{} SHIFT}
 
 \newcommand{\keylctrl}{CTRL}
 \newcommand{\keylsuper}{} %TODO
 \newcommand{\keylalt}{ALT}
-\newcommand{\keyspace}{} %TODO
+\newcommand{\keyspace}{}
 \newcommand{\keyralt}{ALT}
 \newcommand{\keyrsuper}{} %TODO
-\newcommand{\keymenu}{} %TODO
+\newcommand{\keymenu}{\winmenu}
 \newcommand{\keyrctrl}{CTRL}

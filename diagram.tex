@@ -1,78 +1,82 @@
 \documentclass[landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
 \usepackage{keymacros}
 \usepackage{tikz}
 \usetikzlibrary{shapes.multipart}
 
+\renewcommand\familydefault{\sfdefault}
 
 \begin{document}
 \begin{center}
 \noindent\resizebox{\linewidth}{!}{\begin{tikzpicture}
+[every node/.append style={midway, align=center}]
 
-\draw (0,4) rectangle (1,5) node[midway] {\keytilde};
-\draw (1,4) rectangle (2,5) node[midway] {\keyone};
-\draw (2,4) rectangle (3,5) node[midway] {\keytwo};
-\draw (3,4) rectangle (4,5) node[midway] {\keythree};
-\draw (4,4) rectangle (5,5) node[midway] {\keyfour};
-\draw (5,4) rectangle (6,5) node[midway] {\keyfive};
-\draw (6,4) rectangle (7,5) node[midway] {\keysix};
-\draw (7,4) rectangle (8,5) node[midway] {\keyseven};
-\draw (8,4) rectangle (9,5) node[midway] {\keyeight};
-\draw (9,4) rectangle (10,5) node[midway] {\keynine};
-\draw (10,4) rectangle (11,5) node[midway] {\keyzero};
-\draw (11,4) rectangle (12,5) node[midway] {\keyminus};
-\draw (12,4) rectangle (13,5) node[midway] {\keyequals};
-\draw (13,4) rectangle (15,5) node[midway, scale=.8] {\keybackspace};
+\draw (0,4) rectangle (1,5) node {\keytilde};
+\draw (1,4) rectangle (2,5) node {\keyone};
+\draw (2,4) rectangle (3,5) node {\keytwo};
+\draw (3,4) rectangle (4,5) node {\keythree};
+\draw (4,4) rectangle (5,5) node {\keyfour};
+\draw (5,4) rectangle (6,5) node {\keyfive};
+\draw (6,4) rectangle (7,5) node {\keysix};
+\draw (7,4) rectangle (8,5) node {\keyseven};
+\draw (8,4) rectangle (9,5) node {\keyeight};
+\draw (9,4) rectangle (10,5) node {\keynine};
+\draw (10,4) rectangle (11,5) node {\keyzero};
+\draw (11,4) rectangle (12,5) node {\keyminus};
+\draw (12,4) rectangle (13,5) node {\keyequals};
+\draw (13,4) rectangle (15,5) node {\keybackspace};
 
-\draw (0,3) rectangle (1.5,4) node[midway] {\keytab};
-\draw (1.5,3) rectangle (2.5,4) node[midway] {\keyq};
-\draw (2.5,3) rectangle (3.5,4) node[midway] {\keyw};
-\draw (3.5,3) rectangle (4.5,4) node[midway] {\keye};
-\draw (4.5,3) rectangle (5.5,4) node[midway] {\keyr};
-\draw (5.5,3) rectangle (6.5,4) node[midway] {\keyt};
-\draw (6.5,3) rectangle (7.5,4) node[midway] {\keyy};
-\draw (7.5,3) rectangle (8.5,4) node[midway] {\keyu};
-\draw (8.5,3) rectangle (9.5,4) node[midway] {\keyi};
-\draw (9.5,3) rectangle (10.5,4) node[midway] {\keyo};
-\draw (10.5,3) rectangle (11.5,4) node[midway] {\keyp};
-\draw (11.5,3) rectangle (12.5,4) node[midway] {\keylbracket};
-\draw (12.5,3) rectangle (13.5,4) node[midway] {\keyrbracket};
-\draw (13.5,3) rectangle (15,4) node[midway] {\keybackslash};
+\draw (0,3) rectangle (1.5,4) node {\keytab};
+\draw (1.5,3) rectangle (2.5,4) node {\keyq};
+\draw (2.5,3) rectangle (3.5,4) node {\keyw};
+\draw (3.5,3) rectangle (4.5,4) node {\keye};
+\draw (4.5,3) rectangle (5.5,4) node {\keyr};
+\draw (5.5,3) rectangle (6.5,4) node {\keyt};
+\draw (6.5,3) rectangle (7.5,4) node {\keyy};
+\draw (7.5,3) rectangle (8.5,4) node {\keyu};
+\draw (8.5,3) rectangle (9.5,4) node {\keyi};
+\draw (9.5,3) rectangle (10.5,4) node {\keyo};
+\draw (10.5,3) rectangle (11.5,4) node {\keyp};
+\draw (11.5,3) rectangle (12.5,4) node {\keylbracket};
+\draw (12.5,3) rectangle (13.5,4) node {\keyrbracket};
+\draw (13.5,3) rectangle (15,4) node {\keybackslash};
 
-\draw (0,2) rectangle (1.75,3) node[midway] {\keycapslock};
-\draw (1.75,2) rectangle (2.75,3) node[midway] {\keya};
-\draw (2.75,2) rectangle (3.75,3) node[midway] {\keys};
-\draw (3.75,2) rectangle (4.75,3) node[midway] {\keyd};
-\draw (4.75,2) rectangle (5.75,3) node[midway] {\keyf};
-\draw (5.75,2) rectangle (6.75,3) node[midway] {\keyg};
-\draw (6.75,2) rectangle (7.75,3) node[midway] {\keyh};
-\draw (7.75,2) rectangle (8.75,3) node[midway] {\keyj};
-\draw (8.75,2) rectangle (9.75,3) node[midway] {\keyk};
-\draw (9.75,2) rectangle (10.75,3) node[midway] {\keyl};
-\draw (10.75,2) rectangle (11.75,3) node[midway] {\keysemicolon};
-\draw (11.75,2) rectangle (12.75,3) node[midway] {\keyapostrophe};
-\draw (12.75,2) rectangle (15,3) node[midway] {\keyreturn};
+\draw (0,2) rectangle (1.75,3) node {\keycapslock};
+\draw (1.75,2) rectangle (2.75,3) node {\keya};
+\draw (2.75,2) rectangle (3.75,3) node {\keys};
+\draw (3.75,2) rectangle (4.75,3) node {\keyd};
+\draw (4.75,2) rectangle (5.75,3) node {\keyf};
+\draw (5.75,2) rectangle (6.75,3) node {\keyg};
+\draw (6.75,2) rectangle (7.75,3) node {\keyh};
+\draw (7.75,2) rectangle (8.75,3) node {\keyj};
+\draw (8.75,2) rectangle (9.75,3) node {\keyk};
+\draw (9.75,2) rectangle (10.75,3) node {\keyl};
+\draw (10.75,2) rectangle (11.75,3) node {\keysemicolon};
+\draw (11.75,2) rectangle (12.75,3) node {\keyapostrophe};
+\draw (12.75,2) rectangle (15,3) node {\keyreturn};
 
-\draw (0,1) rectangle (2.25,2) node[midway] {\keylshift};
-\draw (2.25,1) rectangle (3.25,2) node[midway] {\keyz};
-\draw (3.25,1) rectangle (4.25,2) node[midway] {\keyx};
-\draw (4.25,1) rectangle (5.25,2) node[midway] {\keyc};
-\draw (5.25,1) rectangle (6.25,2) node[midway] {\keyv};
-\draw (6.25,1) rectangle (7.25,2) node[midway] {\keyb};
-\draw (7.25,1) rectangle (8.25,2) node[midway] {\keyn};
-\draw (8.25,1) rectangle (9.25,2) node[midway] {\keym};
-\draw (9.25,1) rectangle (10.25,2) node[midway] {\keycomma};
-\draw (10.25,1) rectangle (11.25,2) node[midway] {\keyperiod};
-\draw (11.25,1) rectangle (12.25,2) node[midway] {\keyslash};
-\draw (12.25,1) rectangle (15,2) node[midway] {\keyrshift};
+\draw (0,1) rectangle (2.25,2) node {\keylshift};
+\draw (2.25,1) rectangle (3.25,2) node {\keyz};
+\draw (3.25,1) rectangle (4.25,2) node {\keyx};
+\draw (4.25,1) rectangle (5.25,2) node {\keyc};
+\draw (5.25,1) rectangle (6.25,2) node {\keyv};
+\draw (6.25,1) rectangle (7.25,2) node {\keyb};
+\draw (7.25,1) rectangle (8.25,2) node {\keyn};
+\draw (8.25,1) rectangle (9.25,2) node {\keym};
+\draw (9.25,1) rectangle (10.25,2) node {\keycomma};
+\draw (10.25,1) rectangle (11.25,2) node {\keyperiod};
+\draw (11.25,1) rectangle (12.25,2) node {\keyslash};
+\draw (12.25,1) rectangle (15,2) node {\keyrshift};
 
-\draw (0,0) rectangle (1.5,1) node[midway] {\keylctrl};
-\draw (1.5,0) rectangle (2.5,1) node[midway] {\keylsuper};
-\draw (2.5,0) rectangle (3.75,1) node[midway] {\keylalt};
-\draw (3.75,0) rectangle (10.25,1) node[midway] {\keyspace};
-\draw (10.25,0) rectangle (11.5,1) node[midway] {\keyralt};
-\draw (11.5,0) rectangle (12.5,1) node[midway] {\keyrsuper};
-\draw (12.5,0) rectangle (13.5,1) node[midway] {\keymenu};
-\draw (13.5,0) rectangle (15,1) node[midway] {\keyrctrl};
+\draw (0,0) rectangle (1.5,1) node {\keylctrl};
+\draw (1.5,0) rectangle (2.5,1) node {\keylsuper};
+\draw (2.5,0) rectangle (3.75,1) node {\keylalt};
+\draw (3.75,0) rectangle (10.25,1) node {\keyspace};
+\draw (10.25,0) rectangle (11.5,1) node {\keyralt};
+\draw (11.5,0) rectangle (12.5,1) node {\keyrsuper};
+\draw (12.5,0) rectangle (13.5,1) node {\keymenu};
+\draw (13.5,0) rectangle (15,1) node {\keyrctrl};
 
 \end{tikzpicture}}
 \end{center}
